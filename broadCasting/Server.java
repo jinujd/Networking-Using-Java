@@ -89,7 +89,7 @@ class Server {
             clients = new Client[noOfClients];
             if (noOfClients > 1) {
                 while (i < noOfClients) {
-                    clients[i] = new Client(clientsTmp[i].client);
+                    clients[i] = clientsTmp[i];
                     i++;
                 }
             } else {
